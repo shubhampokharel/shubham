@@ -1,0 +1,14 @@
+{{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!< default}}
+
+{{!-- The main content area --}}
+<main id="content" class="container" role="main">
+	<div class="row loop">
+		{{#foreach posts}}
+			<div class="col-md-6 col-lg-4 {{#if @first}}first{{/if}} item">
+				{{> "loop"}}
+			</div>
+		{{/foreach}}
+    </div>
+</main>
+{{pagination}}

@@ -1,0 +1,75 @@
+footer {
+	color: $white;
+	background: $background;
+	padding-top: 50px;
+	text-align: center;
+	margin-top: 50px;
+	h3 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	.copyright {
+		margin-top: 50px;
+		a {
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom: 1px solid $blue;
+			}
+		}
+		p {
+			margin: 20px 0;
+			font-size: 0.875rem;
+		}
+	}
+	
+}
+.go-up {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: $small) {
+	.go-up {
+		display: none;
+	}
+}
+
+@media (max-width: $small) {
+	footer {
+		margin-top: 30px;
+		input[type="email"] {
+			padding: 10px 20px;
+			font-size: 0.875rem;
+			margin: 0 10px 10px 0;
+		}
+		.share {
+			a {
+				width: 30px;
+				height: 30px;
+				font-size: 0.75rem;
+				margin: 0;
+			}
+			li {
+				margin-right: 5px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<header>
+	<div class="header-container">
+		<div class="container">
+			<a href="javascript:void(0)" class="nav-trigger" onclick="myFunction()" title="{{t "Menu"}}"><i></i></a>
+			<a class="blog-logo" href="{{@site.url}}" title="{{@site.title}}">
+				{{#if @site.logo}} 
+					<img src="{{@site.logo}}" alt="{{@site.title}}" /> 
+				{{else}}
+					{{@site.title}}
+				{{/if}} 
+			</a>
+			<i style="color: white;">{{@site.description}}</i>
+		</div>
+	</div>
+	
+	<div class="menu-container" id="nav-container">
+		<div class="menu-content">
+			<div class="menu-inner">
+				<div class="container">
+					{{navigation}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</header>

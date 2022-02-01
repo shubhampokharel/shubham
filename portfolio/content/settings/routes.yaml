@@ -1,0 +1,25 @@
+routes:
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+
+  /design/:
+    permalink: /{slug}/
+    template: design
+    filter: primary_tag:design
+
+  /product/:
+    permalink: /{slug}/
+    template: product
+    filter: primary_tag:product
+
+  /animation/:
+    permalink: /{slug}/
+    template: animation
+    filter: primary_tag:animation
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
