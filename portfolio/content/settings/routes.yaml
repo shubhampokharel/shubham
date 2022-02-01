@@ -1,4 +1,7 @@
 routes:
+/:
+    controller: channel
+    filter: tag:[design,product,animation]
 
 collections:
   /:
@@ -6,17 +9,17 @@ collections:
     template: index
 
   /design/:
-    permalink: /{slug}/
+    permalink: /design/{slug}/
     template: design
     filter: primary_tag:design
 
   /product/:
-    permalink: /{slug}/
+    permalink: /product/{slug}/
     template: product
     filter: primary_tag:product
 
   /animation/:
-    permalink: /{slug}/
+    permalink: /animation/{slug}/
     template: animation
     filter: primary_tag:animation
 
