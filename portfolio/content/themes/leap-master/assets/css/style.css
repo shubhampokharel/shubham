@@ -1146,12 +1146,8 @@ article .post-meta:not(.has-image) .img-holder{
     color: #fff;
 }
 
-.content-inner .info-bar .social a.twitter{
-    background: #33b1ff;
-}
-
-.content-inner .info-bar .social a.facebook{
-    background: #005e99;
+.content-inner .info-bar .social a.linkedin{
+    background: #0a66c2;
 }
 
 .content-inner .info-bar .social a:hover{
@@ -1201,7 +1197,7 @@ article .post-meta:not(.has-image) .img-holder{
     line-height: 25px;
 }
 
-#related-posts-mobile{
+#related-posts-mobile, #related-posts-tablet{
     display: none;
 }
 
@@ -1861,17 +1857,13 @@ footer .copyright a:hover{
 }
 
 .social a{
-    margin: 0 15px 70px 15px;
+    margin: 0 15px 40px 15px;
     display: inline-block;
     color: #ffffff;
 }
 
-.social a.twitter:hover{
-    color: #33b1ff;
-}
-
-.social a.facebook:hover{
-    color: #005e99;
+.social a.linkedin:hover{
+    color: #0a66c2;
 }
 
 .gh-input.error{
@@ -1947,7 +1939,10 @@ footer .copyright a:hover{
         left: 50px;
         bottom: 30px;
     }
-    .related-posts .grid article:last-of-type{
+    #related-posts-tablet {
+        display: block;
+    }
+    #related-posts-normal, #related-posts-mobile {
         display: none;
     }
     .content-inner .authors{
@@ -2094,7 +2089,7 @@ footer .copyright a:hover{
     .related-posts .grid article:last-of-type{
         display: inline-block;
     }
-    #related-posts-normal {
+    #related-posts-normal, #related-posts-tablet {
         display: none;
     }
     #related-posts-mobile{
