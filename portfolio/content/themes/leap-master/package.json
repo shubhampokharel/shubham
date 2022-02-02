@@ -40,5 +40,8 @@
                 "width": 855
             }
         }
+    },
+    "dependencies": {
+        "gulp": "^4.0.2"
     }
 }

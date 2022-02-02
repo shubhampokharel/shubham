@@ -179,6 +179,9 @@ blockquote{
     margin: 0;
     font-style: italic;
     position: relative;
+    color: #0a1522;
+    padding: 16px;
+    background-color: #f1f1f1;
 }
 
 blockquote:before{
@@ -188,7 +191,7 @@ blockquote:before{
     position: absolute;
     font-style: normal;
     top: 0;
-    left: -10px;
+    left: -8px;
     height: 20px;
     color: #cccccc;
     z-index: 1;
@@ -342,7 +345,8 @@ figure figcaption{
     font-size: 14px;
     display: block;
     padding: 10px;
-    border-bottom: 1px solid #cccccc;
+    color: #383838;
+    border-bottom: 1px solid #646464;
 }
 
 .btn{
@@ -964,6 +968,7 @@ article .post-meta:not(.has-image) .img-holder{
 
 .content-inner img{
     max-width: 100%;
+    height: auto;
 }
 
 .content-inner .editor-content img{
