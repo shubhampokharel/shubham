@@ -424,7 +424,7 @@ header .menu-container .menu-content{
 
 header .search-container .search-inner,
 header .menu-container .menu-inner{
-    background-color: #EAEAEA;
+    background-color: #fcfcfc;
     border-top: 1px solid #DBDBDB;
 }
 
@@ -450,7 +450,7 @@ header .menu-container .container:before{
     right: 5px;
     width: 15px;
     height: 15px;
-    background-color: #EAEAEA;
+    background-color: #ffffff;
     border-top: 1px solid #DBDBDB;
     border-left: 1px solid #DBDBDB;
     transform: rotate(45deg);
