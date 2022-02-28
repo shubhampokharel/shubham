@@ -724,16 +724,17 @@ header .nav-trigger.active{
 
 .grid{
     font-size: 0;
-    width: calc(100% + 30px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+    -webkit-box-align: start;
+    align-items: flex-start;
+    grid-gap: 30px;
     margin-top: 30px;
     margin-left: -15px;
 }
 
 .grid article{
     perspective: 1400px;
-    width: 262.5px;
-    display: inline-block;
-    margin: 0 15px 30px 15px;    
     vertical-align: top;
 }
 
