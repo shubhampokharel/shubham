@@ -13,7 +13,10 @@
     <div class="main-container">
     
         {{> theme_header}}
+        
+        <div id="swup" class="transition-fade">
         {{{body}}}
+        </div>
  
     </div>
 
@@ -36,4 +39,18 @@
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
 </body>
+
+<script src="{{asset "js/swup.js"}}" data-swup-ignore-script></script>
+<script data-swup-ignore-script>
+        // Initiate Swup transitions
+        var swup = new Swup({
+            plugins: [new SwupHeadPlugin(), new SwupScriptsPlugin()],
+        });
+        document.addEventListener('swup:contentReplaced', event => {
+            window.scrollTo(0, 0);
+            initInfiniteScroll(window, document);
+            $('body').removeClass('site-head-open');
+        });
+</script>
+
 </html>

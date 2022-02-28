@@ -3,8 +3,7 @@
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-
-    <main id="content" class="container content-inner" role="main" data-id="{{comment_id}}">
+    <main id="content" class="container content-inner " role="main" data-id="{{comment_id}}">
         <article class="{{post_class}}">
             <div class="post-meta {{#if feature_image}}has-image{{/if}}">
                 {{#if feature_image}}
@@ -59,7 +58,5 @@
             {{/get}}
         </div>
     </div>
-
-    
 
 {{/post}}
