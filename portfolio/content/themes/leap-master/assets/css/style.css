@@ -730,7 +730,6 @@ header .nav-trigger.active{
     align-items: flex-start;
     grid-gap: 30px;
     margin-top: 30px;
-    margin-left: -15px;
 }
 
 .grid article{
@@ -1923,7 +1922,7 @@ footer .copyright a:hover{
 
 @media (max-width: 1199px) {
     .container{
-        max-width: 848px;
+        max-width: 999px;
     }
     #results li{
         width: calc(33.33333% - 50px);
