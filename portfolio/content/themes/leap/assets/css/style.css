@@ -1892,7 +1892,7 @@ footer .copyright a:hover{
 }
 
 .social a{
-    margin: 0 15px 40px 15px;
+    margin: 40px 15px 40px 15px;
     display: inline-block;
     color: #ffffff;
 }
@@ -2304,10 +2304,6 @@ footer .copyright a:hover{
     }
     .subscribe header{
         padding-top: 10px;
-    }
-    .social a{
-        font-size: 18px;
-        margin: 0 5px 40px;
     }
     .subscribe header a{
         margin-bottom: 10px;

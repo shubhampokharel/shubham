@@ -3,9 +3,13 @@
 
 {{!-- The main content area - Masonry grid --}}
 <main id="content" class="container" role="main">
-	<h3 clas="page-title">All projects</h3>
+	<h3 class="page-title">Design projects</h3>
+    {{#get 'posts' include="tags" filter="tag:'design'"}}
+   	 
 	<div class="grid {{^is "paged"}}first{{/is}}">
 	    {{> "loop"}}
 	    <div class="grid-sizer"></div>
 	</div>
+	
+	{{/get}}
 </main>
