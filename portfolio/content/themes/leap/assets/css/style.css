@@ -913,10 +913,28 @@ article .tags a:hover{
 
 article .post-meta{
     position: relative;
-    min-height: 146px;
     overflow: hidden;
     border-radius: 5px 5px 0 0;
     font-size: 0;
+}
+
+article .has-image {
+    text-align: center;
+    height: 300px;
+    object-fit: cover;
+}
+
+article .has-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-holder .has-image {
+    height: 220px;
+    object-fit: cover;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
 }
 
 article .post-meta.expand{
