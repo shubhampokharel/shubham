@@ -46,7 +46,6 @@ html.is-animating .transition-fade {
     font-weight: 300;
 }
 
-
 /* ==========================================================================
    0. Normalize
    ========================================================================== */
@@ -140,10 +139,10 @@ td, th{ padding: 0; }
 }
 
 ::selection {
-    background: rgba(0, 0, 0, 0.2);
+    background: #a3dd15;
 }
 ::-moz-selection {
-    background: rgba(0, 0, 0, 0.2);
+    background: #a3dd15;
 }
 
 body{
@@ -922,6 +921,7 @@ article .has-image {
     text-align: center;
     height: 300px;
     object-fit: cover;
+    border-bottom: 1px solid #cccccc;
 }
 
 article .has-image img {
@@ -1021,6 +1021,7 @@ article .post-meta:not(.has-image) .img-holder{
 
 .content-inner .editor-content img{
     margin: 25px 0;
+    box-shadow: 0px 0px 4px rgba(94,94,94,0.3);
 }
 
 .content-inner .kg-width-full img{

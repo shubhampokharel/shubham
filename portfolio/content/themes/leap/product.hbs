@@ -1,16 +1,13 @@
 {{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
-{{!< default}}
-
-{{!-- The main content area - Masonry grid --}}
-<main id="content" class="container" role="main">
+{{!< default}} {{!-- The main content area - Masonry grid --}} <main id="content" class="container" role="main">
 	<h3 class="page-title">Product design projects</h3>
-    {{#get 'posts' include="tags" filter="tag:'product'"}}
-   	 
-	<div class="grid {{^is "paged"}}first{{/is}}">
-	    {{> "loop"}}
-	    <div class="grid-sizer"></div>
+	{{#get 'posts' include="tags" filter="tag:'product'" limit="all"}}
+
+	<div class="grid {{^is " paged"}}first{{/is}}">
+		{{> "loop"}}
+		<div class="grid-sizer"></div>
 	</div>
-	
+
 	{{/get}}
-  
-</main>
+
+	</main>
