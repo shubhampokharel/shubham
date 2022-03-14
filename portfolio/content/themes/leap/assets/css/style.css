@@ -46,6 +46,18 @@ html.is-animating .transition-fade {
     font-weight: 300;
 }
 
+.page .post-meta img {
+    width: 100%;
+}
+
+.header-social a{
+    margin: 0;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+
 /* ==========================================================================
    0. Normalize
    ========================================================================== */
