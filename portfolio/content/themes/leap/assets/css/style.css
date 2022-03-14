@@ -223,6 +223,7 @@ blockquote{
     color: #0a1522;
     padding: 16px;
     background-color: #f1f1f1;
+    line-height: 1.5;
 }
 
 blockquote:before{
@@ -234,7 +235,7 @@ blockquote:before{
     top: 0;
     left: -8px;
     height: 20px;
-    color: #cccccc;
+    color: #000000;
     z-index: 1;
 }
 
