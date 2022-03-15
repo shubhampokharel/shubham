@@ -50,12 +50,22 @@ html.is-animating .transition-fade {
     width: 100%;
 }
 
+@media (max-width: 900px) {
+    .page .post-meta {
+        min-height: unset !important;
+    }
+}
+
 .header-social a{
     margin: 0;
     display: inline-block;
     color: #ffffff;
     font-size: 28px;
     text-align: center;
+}
+
+.header-social a:hover{
+    color: #0a66c2;
 }
 
 .kg-file-card-contents {
@@ -1283,6 +1293,23 @@ article .post-meta:not(.has-image) .img-holder{
 
 .error-title h1{
     margin-bottom: 0;
+    color: #ffffff;
+}
+
+.error-title p {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.error-title a {
+    margin-bottom: 0;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.error-title a:hover {
+    color: #02a500;
+    border-bottom: 1px solid #02a500;
 }
 
 .error-title p{
