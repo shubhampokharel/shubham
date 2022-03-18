@@ -145,6 +145,9 @@ html.is-animating .transition-fade {
   }
 
 @media (max-width: 700px) {
+    .hide {
+        display: none;
+    }
     .scroll-icon {
         border-radius: 6px;
     }
