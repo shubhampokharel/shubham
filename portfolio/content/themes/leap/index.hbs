@@ -1,5 +1,6 @@
 {{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
 {{!< default}} {{!-- The main content area - Masonry grid --}} <main id="content" class="container" role="main">
+	{{>"intro"}}
 	<h3 class="page-title">All projects</h3>
 	<div class="grid {{^is " paged"}}first{{/is}}">
 		{{> "loop"}}
